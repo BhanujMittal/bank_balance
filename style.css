@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: lightblue !important;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.account-updates {
+    position: relative;
+    width: 50%;
+    height: 35vh;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    filter: drop-shadow(1px 1px 5px white);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.account-updates-data {
+    display: flex;
+    flex-direction: column;
+    height: 89%;
+    margin: auto;
+    width: 100%;
+    padding: 2rem;
+}
+
+.account-updates form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.account-updates form input {
+    margin-top: 2rem;
+    padding: .2rem .3rem;
+    border: none;
+    border-radius: 5px;
+    height: 37px;
+}
+
+.account-updates-data .upper {
+    display: flex;
+    justify-content: space-between;
+}
+
+#back {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: white;
+    padding: .2rem;
+}
+
+#back:hover {
+    opacity: .8;
+}
+
+#notification {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+#notification.fail {
+    background-color: red;
+}
+
+.account-details {
+    border: 1px solid black;
+    width: 50%;
+    height: 35vh;
+    background-color: black;
+    color: white;
+    filter: drop-shadow(1px 1px 5px white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.account-details form {
+    width: 100%;
+}
+
+#holderName {
+    text-transform: capitalize;
+}
+
+#amountInput.redBorder {
+    border: 2px solid red;
+}
